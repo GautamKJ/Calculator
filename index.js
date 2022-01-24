@@ -32,7 +32,7 @@ for (item of button) {
             screen.value = screenValue;
             console.log(screen.value)
         }
-        else if (screenValue!="" && (screenValue.charAt(screenValue.length - 1) == '+' || screenValue.charAt(screenValue.length - 1) == '-' || screenValue.charAt(screenValue.length - 1) == '*' || screenValue.charAt(screenValue.length - 1) == '/' || screenValue.charAt(screenValue.length - 1) == '%') && ((buttonText == '+') || (buttonText == '-') || (buttonText == '*') || (buttonText == '/') || (buttonText == '%'))) {
+        else if (screenValue.length!=undefined && (screenValue.charAt(screenValue.length - 1) == '+' || screenValue.charAt(screenValue.length - 1) == '-' || screenValue.charAt(screenValue.length - 1) == '*' || screenValue.charAt(screenValue.length - 1) == '/' || screenValue.charAt(screenValue.length - 1) == '%') && ((buttonText == '+') || (buttonText == '-') || (buttonText == '*') || (buttonText == '/') || (buttonText == '%'))) {
             console.log("screenValue--> ", screenValue);
             screenValue = screenValue.slice(0, - 1);
             console.log("screenValue--> ", screenValue);
